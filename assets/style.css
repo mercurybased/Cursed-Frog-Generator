@@ -1,0 +1,12 @@
+.choice {
+    display:flex;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.choice button {
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+}
