@@ -26,14 +26,15 @@
 //   }
 
 //random jokes api
-// function getJokes(){
-//     var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
-//     fetch(jokesUrl)
-//     .then(response => response.json())
-//     .then (data => console.log(data))
-//     .catch(function (err) {
-//         console.error(err);
-//   });
+function getJokes(){
+    var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
+    fetch(jokesUrl)
+    .then(response => response.json())
+    .then (data => console.log(data))
+    .catch(function (err) {
+        console.error(err);
+      });
+}
 
 //zen quotes api
 //will need math.random
@@ -41,14 +42,26 @@
 // fetch(zenUrl)
 //     .then(response => response.json())
 
-    // .then (data => console.log(data))
+//     .then (data => console.log(data))
 
-//random fun facts api
-// var funFactsUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/random'
-// fetch(funFactsUrl)
-//     .then(response => response.json())
 
-    // .then (data => console.log(data))
+// var funFact = document.getElementById("fact")
+
+var selection = document.getElementById("selection")
+var btnSelect = document.createElement("h3");
+
+function loadFunFact(){
+
+var funFactsUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/random'
+fetch(funFactsUrl)
+    .then(response => response.json())
+
+    .then (function(data){
+        console.log(data)
+        btnSelect.textContent = data.text;
+        selection.append(btnSelect)
+    })
+}
 
 var winstonGif = document.getElementById("winston-gif")
 
@@ -61,7 +74,7 @@ fetch(frogGifs)
         winstonGif.src = data.data.images.downsized_medium.url;
     })
 
-// document.getElementById("genButton").addEventListener("click", )
+document.getElementById("fact").addEventListener("click",loadFunFact)
 
 
 //1. which button triggers apis
@@ -88,7 +101,6 @@ fetch(frogGifs)
 //             var apiResponse = await loadJokes()
 //             console.log(apiResponse.setup)
 //             response.textContent=apiResponse.setup
-//             response.textContent=apiResponse.delivery
 
 //           break;
 //         case "zen":
