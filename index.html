@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Talking Frogs</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Talking Frogs</h1>
+      <h1>Talking Frogs</h1>
     </header>
     <main>
-        <div id="myModal" class="modal">
-            <div class="modal content"><span class="close">&times;</span><p>Winston the Frog would like to know if you would like a...</p></div>
-        </div>
+      <!-- Modal Trigger -->
+      <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
 
+      <!-- Modal Structure -->
+      <!-- <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div> -->
+
+      <a class="btn modal-trigger" href="#modal1"> Hi </a>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Winston the Frog would like to know if you would like a...</h4>
+        </div>
         <div id="user-choice" class="choice">
+          <div class="modal-footer">
             <button value="joke" class="waves-effect waves-green">joke</button>
             <button value="zen" class="waves-effect waves-green">zen</button>
-            <button value="fact" class="waves-effect waves-green">fun fact</button>
-
+            <button value="fact" class="waves-effect waves-green">
+              fun fact
+            </button>
+          </div>
+          <!-- <div id="response"></div> -->
         </div>
         <div id="response"></div>
 
@@ -36,8 +58,7 @@
         </section>
     </main>
     <footer>Winston loves you 🤍</footer>
-    <script src="./assets/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
