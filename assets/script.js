@@ -7,7 +7,6 @@
 //     return data
 //   }
 
-
 // async function loadZen() {
 //     const response = await fetch('https://type.fit/api/quotes');
 //     const names = await response.json();
@@ -34,10 +33,7 @@
 //     .then (data => console.log(data))
 //     .catch(function (err) {
 //         console.error(err);
-//       });
-  
-
-// }
+//   });
 
 //zen quotes api
 //will need math.random
@@ -65,13 +61,10 @@ fetch(frogGifs)
         winstonGif.src = data.data.images.downsized_medium.url;
     })
 
-
-
 document.getElementById("genButton").addEventListener("click", )
 
 
 //1. which button triggers apis
-// 
 //2. get user value from click
 //3. run the function that correlates with users choice
 //4. display results in another container
@@ -105,38 +98,3 @@ async function getResponse(userChoice) {
          
       }
 }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-// var x = 5
-// var z = 10
-
-// function countSum(a,b) {
-//     return a + b 
-// }
-
-// var result = countSum(x,z)
-
-
-
-
-
-
-
-
-
-
-
-
-
