@@ -1,31 +1,30 @@
-async function loadJokes() {
-    const response = await fetch('https://v2.jokeapi.dev/joke/Any?safe-mode');
-    const names = await response.json();
-    console.log(names); 
-    const data = await names
-    console.log(data)
-    return data
-  }
+// async function loadJokes() {
+//     const response = await fetch('https://v2.jokeapi.dev/joke/Any?safe-mode');
+//     const names = await response.json();
+//     console.log(names); 
+//     const data = await names
+//     console.log(data)
+//     return data
+//   }
 
 
-async function loadZen() {
-    const response = await fetch('https://type.fit/api/quotes');
-    const names = await response.json();
-    console.log(names); 
-    const data = await names
-    console.log(data)
-    return data
-  }
+// async function loadZen() {
+//     const response = await fetch('https://type.fit/api/quotes');
+//     const names = await response.json();
+//     console.log(names); 
+//     const data = await names
+//     console.log(data)
+//     return data
+//   }
 
-
-async function loadFunFact() {
-    const response = await fetch('https://type.fit/api/quotes');
-    const names = await response.json();
-    console.log(names); 
-    const data = await names
-    console.log(data)
-    return data
-  }
+// async function loadFunFact() {
+//     const response = await fetch('https://type.fit/api/quotes');
+//     const names = await response.json();
+//     console.log(names); 
+//     const data = await names
+//     console.log(data)
+//     return data
+//   }
 
 //random jokes api
 // function getJokes(){
@@ -40,35 +39,35 @@ async function loadFunFact() {
 
 // }
 
-
 //zen quotes api
 //will need math.random
-var zenUrl = 'https://type.fit/api/quotes'
-fetch(zenUrl)
-    .then(response => response.json())
+// var zenUrl = 'https://type.fit/api/quotes'
+// fetch(zenUrl)
+//     .then(response => response.json())
 
     // .then (data => console.log(data))
 
 //random fun facts api
-var funFactsUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/random'
-fetch(funFactsUrl)
-    .then(response => response.json())
+// var funFactsUrl = 'https://uselessfacts.jsph.pl/api/v2/facts/random'
+// fetch(funFactsUrl)
+//     .then(response => response.json())
 
     // .then (data => console.log(data))
 
-
-//random frog gifs api
-//append to page permanently
+var winstonGif = document.getElementById("winston-gif")
 
 var frogGifs = 'https://api.giphy.com/v1/gifs/random?api_key=DnsD8DFnTDfvOKFUyaNiJpmBRJ0k8dGm&tag=frog&rating=g'
 fetch(frogGifs)
     .then(response => response.json())
 
-    // .then (data => console.log(data))
+    .then (function(data){
+        console.log(data)
+        winstonGif.src = data.data.images.downsized_medium.url;
+    })
 
 
 
-// document.getElementById("genButton").addEventListener("click", )
+document.getElementById("genButton").addEventListener("click", )
 
 
 //1. which button triggers apis
