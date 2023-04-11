@@ -89,7 +89,6 @@ document.getElementById("genButton").addEventListener("click", )
 //             console.log(apiResponse.setup)
 //             response.textContent=apiResponse.setup
 //             response.textContent=apiResponse.delivery
-
 //           break;
 //         case "zen":
 //           break;
