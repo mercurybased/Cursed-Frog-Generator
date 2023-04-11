@@ -61,7 +61,7 @@ fetch(frogGifs)
         winstonGif.src = data.data.images.downsized_medium.url;
     })
 
-document.getElementById("genButton").addEventListener("click", )
+// document.getElementById("genButton").addEventListener("click", )
 
 
 //1. which button triggers apis
