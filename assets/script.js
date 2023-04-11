@@ -77,41 +77,53 @@ fetch(frogGifs)
 //3. run the function that correlates with users choice
 //4. display results in another container
 
-var choice 
-var choices = document.getElementById("user-choice")
-var displayResponse = document.getElementById("response")
-choices.addEventListener('click', getValue)
-function getValue(event){
-    console.log("events value =",event.target.value)
-    console.log("events =",event)
+// var choice 
+// var choices = document.getElementById("user-choice")
+// var displayResponse = document.getElementById("response")
+// choices.addEventListener('click', getValue)
+// function getValue(event){
+//     console.log("events value =",event.target.value)
+//     console.log("events =",event)
     
-    choice = event.target.value
-    getResponse(choice)
-}
+//     choice = event.target.value
+//     getResponse(choice)
+// }
 
-async function getResponse(userChoice) {
-    switch(userChoice) {
-        case "joke":
-            console.log("user picked joke")
-            var apiResponse = await loadJokes()
-            console.log(apiResponse.setup)
-            response.textContent=apiResponse.setup
+// async function getResponse(userChoice) {
+//     switch(userChoice) {
+//         case "joke":
+//             console.log("user picked joke")
+//             var apiResponse = await loadJokes()
+//             console.log(apiResponse.setup)
+//             response.textContent=apiResponse.setup
+//             response.textContent=apiResponse.delivery
 
-          break;
-        case "zen":
-          break;
-        case "fact":
-          break;
-        default:
+//           break;
+//         case "zen":
+//           break;
+//         case "fact":
+//           break;
+//         default:
          
-      }
-}
+//       }
+// }
 
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.modal');
+//     var instances = M.Modal.init(elems, {dismissible:true});
+    
+//   });
   
 
 
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {dismissible:true});
+    console.log(instances)
+  });
 
 
 
