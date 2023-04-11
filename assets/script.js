@@ -26,7 +26,6 @@
 //   }
 
 //random jokes api
-<<<<<<< HEAD
 function getJokes(){
     var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
     fetch(jokesUrl)
@@ -36,16 +35,6 @@ function getJokes(){
         console.error(err);
       });
 }
-=======
-// function getJokes(){
-//     var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
-//     fetch(jokesUrl)
-//     .then(response => response.json())
-//     .then (data => console.log(data))
-//     .catch(function (err) {
-//         console.error(err);
-//   });
->>>>>>> dev
 
 //zen quotes api
 //will need math.random
@@ -81,12 +70,7 @@ fetch(frogGifs)
         winstonGif.src = data.data.images.downsized_medium.url;
     })
 
-<<<<<<< HEAD
 document.getElementById("fact").addEventListener("click", loadFunFact)
-=======
-document.getElementById("genButton").addEventListener("click", )
-
->>>>>>> dev
 
 //1. which button triggers apis
 //2. get user value from click
@@ -112,10 +96,6 @@ document.getElementById("genButton").addEventListener("click", )
 //             var apiResponse = await loadJokes()
 //             console.log(apiResponse.setup)
 //             response.textContent=apiResponse.setup
-<<<<<<< HEAD
-=======
-//             response.textContent=apiResponse.delivery
->>>>>>> dev
 
 //           break;
 //         case "zen":
