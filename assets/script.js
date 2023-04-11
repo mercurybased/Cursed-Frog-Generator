@@ -7,7 +7,6 @@
 //     return data
 //   }
 
-
 // async function loadZen() {
 //     const response = await fetch('https://type.fit/api/quotes');
 //     const names = await response.json();
@@ -27,6 +26,7 @@
 //   }
 
 //random jokes api
+<<<<<<< HEAD
 function getJokes(){
     var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
     fetch(jokesUrl)
@@ -36,6 +36,16 @@ function getJokes(){
         console.error(err);
       });
 }
+=======
+// function getJokes(){
+//     var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
+//     fetch(jokesUrl)
+//     .then(response => response.json())
+//     .then (data => console.log(data))
+//     .catch(function (err) {
+//         console.error(err);
+//   });
+>>>>>>> dev
 
 //zen quotes api
 //will need math.random
@@ -71,10 +81,14 @@ fetch(frogGifs)
         winstonGif.src = data.data.images.downsized_medium.url;
     })
 
+<<<<<<< HEAD
 document.getElementById("fact").addEventListener("click", loadFunFact)
+=======
+document.getElementById("genButton").addEventListener("click", )
+
+>>>>>>> dev
 
 //1. which button triggers apis
-// 
 //2. get user value from click
 //3. run the function that correlates with users choice
 //4. display results in another container
@@ -98,6 +112,10 @@ document.getElementById("fact").addEventListener("click", loadFunFact)
 //             var apiResponse = await loadJokes()
 //             console.log(apiResponse.setup)
 //             response.textContent=apiResponse.setup
+<<<<<<< HEAD
+=======
+//             response.textContent=apiResponse.delivery
+>>>>>>> dev
 
 //           break;
 //         case "zen":
@@ -109,11 +127,22 @@ document.getElementById("fact").addEventListener("click", loadFunFact)
 //       }
 // }
 
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.modal');
+//     var instances = M.Modal.init(elems, {dismissible:true});
+    
+//   });
   
 
 
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {dismissible:true});
+    console.log(instances)
+  });
 
 
 
