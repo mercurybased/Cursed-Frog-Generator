@@ -1,11 +1,11 @@
-// async function loadJokes() {
-//     const response = await fetch('https://v2.jokeapi.dev/joke/Any?safe-mode');
-//     const names = await response.json();
-//     console.log(names); 
-//     const data = await names
-//     console.log(data)
-//     return data
-//   }
+async function loadJokes() {
+    const response = await fetch('https://v2.jokeapi.dev/joke/Any?safe-mode');
+    const names = await response.json();
+    console.log(names); 
+    const data = await names
+    console.log(data)
+    return data
+  }
 
 // async function loadZen() {
 //     const response = await fetch('https://type.fit/api/quotes');
@@ -61,7 +61,7 @@ fetch(frogGifs)
         winstonGif.src = data.data.images.downsized_medium.url;
     })
 
-document.getElementById("genButton").addEventListener("click", )
+// document.getElementById("genButton").addEventListener("click", )
 
 
 //1. which button triggers apis
@@ -81,67 +81,27 @@ document.getElementById("genButton").addEventListener("click", )
 //     getResponse(choice)
 // }
 
-// async function getResponse(userChoice) {
-//     switch(userChoice) {
-//         case "joke":
-//             console.log("user picked joke")
-//             var apiResponse = await loadJokes()
-//             console.log(apiResponse.setup)
-//             response.textContent=apiResponse.setup
-//             response.textContent=apiResponse.delivery
-
-//           break;
-//         case "zen":
-//           break;
-//         case "fact":
-//           break;
-//         default:
+async function getResponse(userChoice) {
+    switch(userChoice) {
+        case "joke":
+            console.log("user picked joke")
+            var apiResponse = await loadJokes()
+            console.log(apiResponse.setup)
+            response.textContent=apiResponse.setup
+          break;
+        case "zen":
+          break;
+        case "fact":
+          break;
+        default:
          
-//       }
-// }
+      }
+}
 
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.modal');
-//     var instances = M.Modal.init(elems, {dismissible:true});
-    
-//   });
-  
-
-
-
+//modal
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, {dismissible:true});
     console.log(instances)
   });
-
-
-
-
-
-
-
-
-// var x = 5
-// var z = 10
-
-// function countSum(a,b) {
-//     return a + b 
-// }
-
-// var result = countSum(x,z)
-
-
-
-
-
-
-
-
-
-
-
-
 
