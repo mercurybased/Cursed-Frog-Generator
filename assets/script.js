@@ -47,6 +47,8 @@ function getJokes(){
 
 // var funFact = document.getElementById("fact")
 
+var selection = document.getElementById("selection")
+var btnSelect = document.createElement("h3");
 
 function loadFunFact(){
 
@@ -56,6 +58,8 @@ fetch(funFactsUrl)
 
     .then (function(data){
         console.log(data)
+        btnSelect.textContent = data.text;
+        selection.append(btnSelect)
     })
 }
 
@@ -70,7 +74,8 @@ fetch(frogGifs)
         winstonGif.src = data.data.images.downsized_medium.url;
     })
 
-document.getElementById("fact").addEventListener("click", loadFunFact)
+document.getElementById("fact").addEventListener("click",loadFunFact)
+
 
 //1. which button triggers apis
 //2. get user value from click
