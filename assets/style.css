@@ -1,12 +1,8 @@
 .choice {
     display:flex;
     width: 80%;
-    margin:10%;
-    padding:5%;
-
+    margin: 0 auto;
 }
-
-/* hello */
 
 .choice button {
     width: 100%;
@@ -35,8 +31,8 @@ header h1{
     border-radius: 50%;
     border-style: solid;
     position:absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.60em;
     text-align: center;
     color: #FEBE10;
 }
@@ -77,7 +73,7 @@ main {
     padding:5%;
     margin:0% 20% 40% -7%;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Sue Ellen Francisco', cursive;
     border-radius: 25px;
     border-style: solid;
     border-width:10px;
@@ -108,10 +104,9 @@ button {
 } */
 
 #winston-gif {
-    align-items: center;
-    margin:-10% 75% 25% -15%;
-    min-height: auto;
-    min-width: auto;
+    display:block;
+    margin:40% 0% 50% -30%;
+
     border-width: 10px;
     border-style: solid;
     border-radius: 25px;
@@ -119,10 +114,12 @@ button {
 
 #selection{
     background-position: right;
+    background-color: #a4dded;
+    opacity:.8;
     font-size: large;
     font-family: sans-serif;
     padding:2%;
-    margin:-40% 20% 25% 25%;
+    margin:-43% 20% 25% 25%;
     border-style: dashed;
     border-width: 10px;
     border-radius: 25px;
@@ -135,7 +132,7 @@ footer {
     margin-bottom: 2%;
     padding-bottom: 0;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Pompiere', cursive;
     color:azure;
 
 }
