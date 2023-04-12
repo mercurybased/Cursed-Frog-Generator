@@ -2,10 +2,7 @@
     display:flex;
     width: 80%;
     margin: 0 auto;
-
 }
-
-/* hello */
 
 .choice button {
     width: 100%;
@@ -14,7 +11,6 @@
 }
 
 body {
-    /* background: repeating-linear-gradient(to top right, #0093Af, #A4DDED 15%, #0093Af 30%); */
     background-image: url(https://cdn.dribbble.com/users/1271649/screenshots/4888430/media/f77a8f00d01b1132f60277b681847333.gif);
     background-size:cover;
     padding: 25px 50px 75px 100px;
@@ -44,6 +40,7 @@ header h1{
     text-align: center;
     color: #FEBE10;
 }
+
 main {
     background-color:rgba(0,0,0,0.8) #00A86B;
     height: 75%;
@@ -58,10 +55,11 @@ main {
     position:sticky;    
     font-family: sans-serif;
 }
+
 .modal-trigger {
     background-image:radial-gradient(#FEBE10,#e25822,#FEBE10);
     align-self: center;
-    text-align:center;
+    text-align: center;
     line-height: 100px;
     height:120px;
     width:400px;
@@ -74,6 +72,7 @@ main {
     color: #7c0a02;
     
 }
+
 .modal {
     background-image: linear-gradient(to bottom right,#ace1af,#50c878,#006400,#50c878,#ace1af);
     position:absolute;
@@ -86,28 +85,44 @@ main {
     border-style: solid;
     border-width:10px;
     border-color:#FEBE10;
-
 }
+
 .modal-footer {
     background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
 }
+
 .zen{
     background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
 }
+
 button {
     background-position: bottom;
     padding: 30px;
 }
+
 .winston-gif {
     display:block;
     margin: 0;
     align-items: center;
 }
-section {
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#selection {
     font-size: larger;
     font-family: sans-serif;
     text-align: center;
+    background-color: #00A86B;
+    color: azure;
+    border: #FEBE10;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
 }
+
 footer {
     background-position: bottom;
     background:none ;
@@ -115,5 +130,4 @@ footer {
     text-align: center;
     font-family: sans-serif;
     color:azure;
-
 }
