@@ -31,15 +31,15 @@ https://dribbble.com/shots/4888430-Pond-Animation
 //   }
 
 //random jokes api
-function getJokes(){
-    var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
-    fetch(jokesUrl)
-    .then(response => response.json())
-    .then (data => console.log(data))
-    .catch(function (err) {
-        console.error(err);
-      });
-}
+// function getJokes(){
+//     var jokesUrl = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
+//     fetch(jokesUrl)
+//     .then(response => response.json())
+//     .then (data => console.log(data))
+//     .catch(function (err) {
+//         console.error(err);
+//       });
+// }
 
 //zen quotes api
 //will need math.random
@@ -53,7 +53,7 @@ function getJokes(){
 // var funFact = document.getElementById("fact")
 
 var selection = document.getElementById("selection")
-var btnSelect = document.createElement("h3");
+var btnSelect = document.createElement("h4");
 
 function loadFunFact(){
 
@@ -65,6 +65,23 @@ fetch(funFactsUrl)
         console.log(data)
         btnSelect.textContent = data.text;
         selection.append(btnSelect)
+    })
+}
+
+var zenUrl = 'https://type.fit/api/quotes'
+
+function loadZen(){
+    
+    fetch(zenUrl)
+    .then(response => response.json())
+    
+    .then (function(data){
+        
+        var zenItem = Math.floor(Math.random()*data.length)
+        var zenQuote = data[zenItem].text
+        var zenAuthor = data[zenItem].author
+        selection.textContent = zenQuote + "  " + zenAuthor
+   
     })
 }
 
@@ -80,6 +97,7 @@ fetch(frogGifs)
     })
 
 document.getElementById("fact").addEventListener("click",loadFunFact)
+document.getElementById("zen").addEventListener("click", loadZen)
 
 
 //1. which button triggers apis
@@ -116,48 +134,10 @@ document.getElementById("fact").addEventListener("click",loadFunFact)
 //       }
 // }
 
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.modal');
-//     var instances = M.Modal.init(elems, {dismissible:true});
-    
-//   });
-  
-
-
-
+//modal
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, {dismissible:true});
     console.log(instances)
   });
-
-
-
-
-
-
-
-
-// var x = 5
-// var z = 10
-
-// function countSum(a,b) {
-//     return a + b 
-// }
-
-// var result = countSum(x,z)
-
-
-
-
-
-
-
-
-
-
-
-
 
