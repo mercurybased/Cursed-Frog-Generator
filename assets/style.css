@@ -34,7 +34,6 @@ header h1{
     border-width: 10px;
     border-radius: 25px;
     border-style: solid;
-    position:absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-align: center;
@@ -43,16 +42,6 @@ header h1{
 
 main {
     background-color:rgba(0,0,0,0.8) #00A86B;
-    height: 75%;
-    width: 74%;
-    padding-top:125px;
-    padding-left: 450px;
-    padding-right: 75px;
-    padding-bottom: 25px;
-    padding-top: 100px;
-    margin-top: 60px;
-    margin-left: 180px;
-    position:sticky;    
     font-family: sans-serif;
 }
 
@@ -70,7 +59,6 @@ main {
     font-size: large;
     font-family: sans-serif;
     color: #7c0a02;
-    
 }
 
 .modal {
@@ -100,15 +88,11 @@ button {
     padding: 30px;
 }
 
-.winston-gif {
+#winston-gif {
     display:block;
     margin: 0;
     align-items: center;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
 }
 
 #selection {
