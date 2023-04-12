@@ -75,10 +75,7 @@ main {
     
 }
 .modal {
-    /* height:200px; */
-    background-color: red; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right,#ace1af,#50c878,#006400,#50c878,#ace1af);
-    /* background-image:linear-gradient(#ace1af,#50c878,#006400,#50c878,#ace1af); */
     position:absolute;
     height:200px;
     min-height:100%;
@@ -91,13 +88,25 @@ main {
     border-color:#FEBE10;
 
 }
+.modal-footer {
+    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+}
+.zen{
+    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+}
 button {
     background-position: bottom;
     padding: 30px;
 }
+.winston-gif {
+    display:block;
+    margin: 0;
+    align-items: center;
+}
 section {
     font-size: larger;
     font-family: sans-serif;
+    text-align: center;
 }
 footer {
     background-position: bottom;
