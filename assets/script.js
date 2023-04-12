@@ -1,9 +1,12 @@
 //fun fact
 var selection = document.getElementById("selection");
 var btnSelect = document.createElement("h4");
+var answerModal = document.querySelector("#modal1")
+var instance;
 
+var funFactsUrl = "https://uselessfacts.jsph.pl/api/v2/facts/random";
 function loadFunFact() {
-  var funFactsUrl = "https://uselessfacts.jsph.pl/api/v2/facts/random";
+instance.close()
   fetch(funFactsUrl)
     .then((response) => response.json())
 
@@ -18,6 +21,7 @@ function loadFunFact() {
 var zenUrl = "https://type.fit/api/quotes";
 
 function loadZen() {
+instance.close()
   fetch(zenUrl)
     .then((response) => response.json())
 
@@ -34,6 +38,7 @@ function loadZen() {
 var jokesUrl = "https://v2.jokeapi.dev/joke/Any?safe-mode";
 
 function loadJokes() {
+instance.close()
   fetch(jokesUrl)
     .then((response) => response.json())
 
@@ -52,6 +57,7 @@ document.getElementById("fact").addEventListener("click", loadFunFact);
 document.getElementById("zen").addEventListener("click", loadZen);
 document.getElementById("joke").addEventListener("click", loadJokes);
 
+
 //frog gif
 var winstonGif = document.getElementById("winston-gif");
 
@@ -69,7 +75,8 @@ fetch(frogGifs)
 
 //modal
 document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".modal");
-  var instances = M.Modal.init(elems, { dismissible: true });
-  console.log(instances);
+  var elem = document.querySelector("#modal1");
+  instance = M.Modal.init(elem, { dismissible: true });
+  
 });
+
