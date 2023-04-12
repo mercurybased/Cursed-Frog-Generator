@@ -1,3 +1,8 @@
+/*
+Inspired on this dribbble
+https://dribbble.com/shots/4888430-Pond-Animation
+*/
+
 // async function loadJokes() {
 //     const response = await fetch('https://v2.jokeapi.dev/joke/Any?safe-mode');
 //     const names = await response.json();
