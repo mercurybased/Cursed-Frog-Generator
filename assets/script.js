@@ -1,13 +1,16 @@
-//fun fact
+
 var selection = document.getElementById("selection");
 var btnSelect = document.createElement("h4");
 var answerModal = document.querySelector("#modal1")
 var instance;
+var type;
+
 
 var funFactsUrl = "https://uselessfacts.jsph.pl/api/v2/facts/random";
 function loadFunFact() {
+    type = "fact"
 instance.close()
-  fetch(funFactsUrl)
+fetch(funFactsUrl)
     .then((response) => response.json())
 
     .then(function (data) {
@@ -21,12 +24,13 @@ instance.close()
 var zenUrl = "https://type.fit/api/quotes";
 
 function loadZen() {
+    type = "zen"
 instance.close()
-  fetch(zenUrl)
+fetch(zenUrl)
     .then((response) => response.json())
-
+    
     .then(function (data) {
-      var zenItem = Math.floor(Math.random() * data.length);
+        var zenItem = Math.floor(Math.random() * data.length);
       var zenQuote = data[zenItem].text;
       var zenAuthor = data[zenItem].author;
       btnSelect.textContent = zenQuote + "  " + zenAuthor;
@@ -38,12 +42,18 @@ instance.close()
 var jokesUrl = "https://v2.jokeapi.dev/joke/Any?safe-mode";
 
 function loadJokes() {
+    type = "joke"
 instance.close()
   fetch(jokesUrl)
     .then((response) => response.json())
 
     .then(function (data) {
       console.log(data);
+      //if error statement
+    //   if (jaskdhf) {
+    //     loadJokes()
+    //     return
+    //   }
       var jokeSetup = data.setup;
       var jokeDelivery = data.delivery;
       btnSelect.textContent = jokeSetup + "......." + jokeDelivery;
@@ -80,3 +90,25 @@ document.addEventListener("DOMContentLoaded", function () {
   
 });
 
+
+//create bookmark star for user to select if they want to save that quote
+var bookmark = document.getElementById("bookmark-btn")
+bookmark.addEventListener("click", addToLocalStorage)
+//when that star is highlighted, the quote is then added to local storage-- when star is clicked a function is run
+// star click? run addToLocalStorage function
+var wisdomArray = JSON.parse(localStorage.getItem("wisdom")) || []
+function addToLocalStorage(){
+    // where this button is clicked, grab the information from the parent/siblings/children of the button, set it to variables, and take that iformation, turn it into an object, push the object into the wisdomArray, and THEN use setItem
+    var userSaved = btnSelect.textContent
+    // figure out which one they got
+    
+    var completeObject = { [type]: userSaved}
+    wisdomArray.push(completeObject)
+    localStorage.setItem("wisdom", JSON.stringify(wisdomArray))
+}
+
+
+//when the quote is added to local storage, then the quote is displayed in a text box on the side labeled "Saved Wisdom"
+
+//"saved Wisdom" appears only once the star is selected
+//

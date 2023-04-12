@@ -34,8 +34,8 @@ header h1{
     border-width: 10px;
     border-radius: 25px;
     border-style: solid;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.60em;
     text-align: center;
     color: #FEBE10;
 }
@@ -63,12 +63,11 @@ main {
 
 .modal {
     background-image: linear-gradient(to bottom right,#ace1af,#50c878,#006400,#50c878,#ace1af);
-    position:absolute;
-    height:200px;
-    min-height:100%;
+    height:100px;
+    min-height:50%;
     width: 80%;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Sue Ellen Francisco', cursive;
     border-radius: 25px;
     border-style: solid;
     border-width:10px;
@@ -76,17 +75,23 @@ main {
 }
 
 .modal-footer {
+    display:none;
+}
+
+#zen {
+    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+}
+#joke {
+    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+}
+#fact {
     background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
 }
 
-.zen{
-    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
-}
-
-button {
+/* button {
     background-position: bottom;
     padding: 30px;
-}
+} */
 
 #winston-gif {
     display:block;
@@ -97,7 +102,7 @@ button {
 
 #selection {
     font-size: larger;
-    font-family: sans-serif;
+    font-family: 'Pompiere', cursive;
     text-align: center;
     background-color: #00A86B;
     color: azure;
@@ -112,6 +117,6 @@ footer {
     background:none ;
     align-content: end;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Sue Ellen Francisco', cursive;
     color:azure;
 }

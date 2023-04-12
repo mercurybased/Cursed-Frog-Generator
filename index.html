@@ -7,39 +7,44 @@
     <title>Talking Frogs</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pompiere&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
-<body>
-  <header>
-    <h1>Talking Frogs</h1>
-  </header>
-  <main>
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Winston the Frog would like to know if you would like a...</h4>
-      </div>
-      <div id="user-choice" class="choice">
-        <div class="modal-footer">
-          <button id="joke" class="waves-effect waves-green">joke</button>
-          <button id="zen" class="waves-effect waves-green">zen</button>
-          <button id="fact" class="waves-effect waves-green">fun fact</button>
+  <body>
+    <header>
+      <h1>Talking Frogs</h1>
+    </header>
+    <main>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Winston the Frog would like to know if you would like a...</h4>
         </div>
+        <div id="user-choice" class="choice">
+            <button id="joke" class="waves-effect waves-green">joke</button>
+            <button id="zen" class="waves-effect waves-green">zen</button>
+            <button id="fact" class="waves-effect waves-green">fun fact</button>
+        </div>
+        <div class="modal-footer">
       </div>
-    </div>
-
-    <section class="row wrapper">
-      <div class="col s12 m6" id="gifcontainer">
-        <img id="winston-gif">
       </div>
-      <section class="col s12 m6" id="selection"></section>
 
-    </section>
-    <a class="modal-trigger" href="#modal1"> Hi </a>
-  </main>
-  <footer>Winston loves you 🤍</footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="./assets/script.js"></script>
-</body>
+      <section class="row wrapper">
+        <div class="col s12 m6" id="gifcontainer">
+          <img id="winston-gif" />
+        </div>
+        <button id="bookmark-btn">save</button>
+        <section class="col s12 m6" id="selection"></section>
+        <section class="saved-wisdom"></section>
+      </section>
+      <a class="modal-trigger" href="#modal1"> Click Me </a>
+    </main>
+    <footer><h6>Winston loves you 🤍</h6></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
