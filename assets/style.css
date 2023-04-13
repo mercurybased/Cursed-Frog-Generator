@@ -1,0 +1,118 @@
+.choice {
+    display:flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.choice button {
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+}
+
+body {
+    background-image: url(https://cdn.dribbble.com/users/1271649/screenshots/4888430/media/f77a8f00d01b1132f60277b681847333.gif);
+    background-size:cover;
+    padding: 25px 50px 75px 100px;
+    height: 990px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+header h1{
+    background:linear-gradient(#00853E,#006400,#00853E) ;
+    padding-left: 0px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    margin-top:20px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+    height: 75px;
+    width: 55%;
+    border-color: #e4aacb;
+    border-width: 2px;
+    border-radius: 25px;
+    border-style: solid;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.60em;
+    text-align: center;
+    color: #ACE1AF;
+}
+
+main {
+    background-color:rgba(0,0,0,0.8) #00A86B;
+    font-family: sans-serif;
+}
+
+.modal-trigger {
+    background-color:#74C365;
+    align-self: center;
+    text-align: center;
+    line-height: 100px;
+    /* height:120px; */
+    width:200px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color:#e4aacb;
+    font-size: xx-large;
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: #033503;
+    padding: 5px;
+}
+
+.modal {
+    background-image: linear-gradient(to bottom right,#ace1af,#50c878,#006400,#50c878,#ace1af);
+    height:100px;
+    min-height:50%;
+    width: 80%;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    border-radius: 25px;
+    border-style: solid;
+    border-width:10px;
+    border-color:#FEBE10;
+}
+
+.modal-footer {
+    display:none;
+}
+
+#zen {
+    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+}
+#joke {
+    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+}
+#fact {
+    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+}
+
+#winston-gif {
+    display:block;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+}
+
+#selection {
+    font-size: larger;
+    font-family: 'Pompiere', cursive;
+    text-align: center;
+    background-color: #00A86B;
+    color: #ACE1AF;
+    border: #e4aacb;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+footer {
+    background-position: bottom;
+    background:none ;
+    align-content: end;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    color:azure;
+}

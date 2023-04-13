@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talking Frogs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pompiere&family=Sue+Ellen+Francisco&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
-    
+  <header>
+    <h1 class="z-depth-2">Talking Frogs</h1>
+  </header>
+  <main>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Winston the Frog would like to know if you would like a...</h4>
+      </div>
+      <div id="user-choice" class="choice">
+        <button id="joke" class="hoverable">joke</button>
+        <button id="zen" class="hoverable">zen</button>
+        <button id="fact" class="hoverable">fun fact</button>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+    <section class="row wrapper col s12 m6 teal darken-4">
+      <div class="col s12 m6" id="gifcontainer">
+        <img id="winston-gif" />
+      </div>
+      <section class="col s12 m6" id="selection"></section>
+      <section class="saved-wisdom"></section>
+    </section>
+  </main>
+  <a class="modal-trigger waves-effect waves-light btn-sm" href="#modal1">Choose Your Wisdom</a>
+  <footer>
+    <h6>Winston loves you 🤍</h6>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
+
 </html>
