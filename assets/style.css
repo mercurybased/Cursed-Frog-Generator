@@ -82,8 +82,7 @@ main {
 }
 
 .modal-footer {
-    background-color:none;
-    margin:0%;
+    display:none;
 }
 #joke{ 
     background-image: linear-gradient(#1ca9c9, #a4dded,#1ca9c9);
@@ -108,8 +107,8 @@ button {
 
 #winston-gif {
     display:block;
-    margin:40% 0% 20% -30%;
-
+    margin:25% 0% 20% -30%;
+    align-items: center;
     border-width: 10px;
     border-style: solid;
     border-radius: 25px;
@@ -117,22 +116,22 @@ button {
 
 #selection{
     background-position: right;
-    background-color: #a4dded;
-    opacity:.8;
-    font-size: large;
+    background-color: #00A86B;
+    font-size: larger;
     font-family: 'Pompiere',cursive;
     padding:2%;
-    margin:-43% 20% 5% 25%;
-    border-style: dashed;
+    margin:-25% 20% 5% 25%;
+    border-style: solid;
+    border-color: #FEBE10;
     border-width: 10px;
     border-radius: 25px;
-    color:#7c0a02;
+    color:#FEBE10;
 }
 
 footer {
     background-position: bottom;
     background:none ;
-    margin:5% 0% 0% 0%;
+    margin:2% 0% 0% 0%;
     text-align: center;
     font-family: 'Pompiere', cursive;
     color:azure;
