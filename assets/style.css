@@ -6,34 +6,31 @@
 
 .choice button {
     width: 100%;
-    padding: 15px;
-    margin: 15px;
+    padding: 3%;
+    margin: 3%;
 }
 
 body {
     background-image: url(https://cdn.dribbble.com/users/1271649/screenshots/4888430/media/f77a8f00d01b1132f60277b681847333.gif);
     background-size:cover;
-    padding: 25px 50px 75px 100px;
-    height: 990px;
-    font-family: sans-serif;
+    height:100%;
+    width:100%;
+    font-family:  'Pompiere', cursive;
     font-size: 1.5em;
 }
 
 header h1{
     background:linear-gradient(#00853E,#50C878,#00853E) ;
-    padding-left: 0px;
-    padding-right: 40px;
-    padding-top: 15px;
-    padding-bottom: 50px;
-    margin-top:20px;
-    margin-left: 300px;
-    margin-bottom: 50px;
-    height: 75px;
+    background-position: bottom;
+    height: 10%;
     width: 55%;
+    margin:2% 25% 10% 25% ;
+    padding-top:1%;
     border-color: #FEBE10;
-    border-width: 10px;
-    border-radius: 25px;
+    border-width: .4vw;
+    border-radius: 50%;
     border-style: solid;
+    position:absolute;
     font-family: 'Pompiere', cursive;
     font-size: 1.60em;
     text-align: center;
@@ -42,81 +39,101 @@ header h1{
 
 main {
     background-color:rgba(0,0,0,0.8) #00A86B;
-    font-family: sans-serif;
+    height: 75%;
+    width: 74%;
+    margin-left:28%;
+    position:sticky;    
+    font-family:  'Pompiere', cursive;
 }
 
 .modal-trigger {
     background-image:radial-gradient(#FEBE10,#e25822,#FEBE10);
     align-self: center;
-    text-align: center;
-    line-height: 100px;
-    height:120px;
-    width:400px;
+    text-align:center;
+    height:20%;
+    width:40%;
+    padding:2%;
+    margin:0% -20% 20% 25%;
     border-width: 10px;
     border-style: double;
     border-radius: 25px;
     border-color: #e25822;
     font-size: large;
-    font-family: sans-serif;
+    font-family: 'Pompiere', cursive;
     color: #7c0a02;
+    
 }
 
 .modal {
     background-image: linear-gradient(to bottom right,#ace1af,#50c878,#006400,#50c878,#ace1af);
-    height:100px;
-    min-height:50%;
+    position:absolute;
+    max-height:100%;
     width: 80%;
+    min-height:80%;
+    padding:5%;
+    margin:0% 20% 20% -7%;
     text-align: center;
     font-family: 'Sue Ellen Francisco', cursive;
     border-radius: 25px;
     border-style: solid;
     border-width:10px;
     border-color:#FEBE10;
+
 }
 
 .modal-footer {
     display:none;
 }
-
-#zen {
-    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+#joke{ 
+    background-image: linear-gradient(#1ca9c9, #a4dded,#1ca9c9);
+    border-radius: 50%;
+    font-family:  'Pompiere', cursive;
 }
-#joke {
-    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+#zen{
+    background-image: linear-gradient(#1ca9c9, #a4dded,#1ca9c9);
+    border-radius: 50%;
+    font-family:  'Pompiere', cursive;
 }
-#fact {
-    background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
+#fact{
+    background-image: linear-gradient(#1ca9c9, #a4dded,#1ca9c9);
+    border-radius: 50%;
+    font-family:  'Pompiere', cursive;
 }
-
-/* button {
+/* 
+button {
     background-position: bottom;
     padding: 30px;
 } */
 
 #winston-gif {
     display:block;
-    margin: 0;
+    margin:25% 0% 20% -30%;
     align-items: center;
-    width: 100%;
-}
-
-#selection {
-    font-size: larger;
-    font-family: 'Pompiere', cursive;
-    text-align: center;
-    background-color: #00A86B;
-    color: azure;
-    border: #FEBE10;
-    border-width: 5px;
+    border-width: 10px;
     border-style: solid;
     border-radius: 25px;
+}
+
+#selection{
+    background-position: right;
+    background-color: #00A86B;
+    font-size: larger;
+    font-family: 'Pompiere',cursive;
+    padding:2%;
+    margin:-25% 20% 5% 25%;
+    border-style: solid;
+    border-color: #FEBE10;
+    border-width: 10px;
+    border-radius: 25px;
+    color:#FEBE10;
 }
 
 footer {
     background-position: bottom;
     background:none ;
-    align-content: end;
+    margin:2% 0% 0% 0%;
     text-align: center;
-    font-family: 'Sue Ellen Francisco', cursive;
+    font-family: 'Pompiere', cursive;
     color:azure;
+
 }
