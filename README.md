@@ -8,7 +8,11 @@ We wanted to create a fun interactive application that the user can make a choic
 
 Simply click the "Choose Your Wisdom" button and make a selection between a funny joke, an inspirational quote, or a fun fact. Once the user has made a selection, the text corresponding to their choice will immediately populate on screen, followed by an accompanying gif of a random frog. User can endlessly populate more wisdoms by simply clicking the "Choose Your Wisdom" button again and again.
 
-![alt text](assets/images/screenshot.png)
+![Page Load](./assets/images/Page%20Load.png)
+![Selection Modal](./assets/images/Modal%20Selection.png)
+![Joke](./assets/images/Joke.png)
+![Zen](./assets/images/Zen.png)
+![Fun Fact](./assets/images/Fun%20Fact.png)
 
 ## Credits
 

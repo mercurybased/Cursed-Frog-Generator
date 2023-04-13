@@ -1,6 +1,7 @@
 var funFactsUrl = "https://uselessfacts.jsph.pl/api/v2/facts/random";
 var zenUrl = "https://type.fit/api/quotes";
 var jokesUrl = "https://v2.jokeapi.dev/joke/Any?safe-mode";
+var frogGifs = "https://api.giphy.com/v1/gifs/random?api_key=DnsD8DFnTDfvOKFUyaNiJpmBRJ0k8dGm&tag=frog&rating=g";
 var winstonGif = document.getElementById("winston-gif");
 var selection = document.getElementById("selection");
 var btnSelect = document.createElement("h4");
@@ -51,26 +52,25 @@ function loadJokes() {
     .then(function (data) {
       console.log(data);
       // if error statement
-        if (undefined) {
-          loadJokes()
-          return
-        }
+      if (data.setup==undefined) {
+        loadJokes();
+        return;
+      }
       var jokeSetup = data.setup;
       var jokeDelivery = data.delivery;
-      btnSelect.textContent = jokeSetup + "......." + jokeDelivery;
+      btnSelect.textContent = jokeSetup + "..." + jokeDelivery;
       selection.append(btnSelect);
     });
 }
 
 // Event listeners for modal
+
 document.getElementById("fact").addEventListener("click", loadFunFact);
 document.getElementById("zen").addEventListener("click", loadZen);
 document.getElementById("joke").addEventListener("click", loadJokes);
 
 // Frog gif
 
-var frogGifs =
-  "https://api.giphy.com/v1/gifs/random?api_key=DnsD8DFnTDfvOKFUyaNiJpmBRJ0k8dGm&tag=frog&rating=g";
 fetch(frogGifs)
   .then((response) => response.json())
 
@@ -78,7 +78,6 @@ fetch(frogGifs)
     console.log(data);
     winstonGif.src = data.data.images.downsized_medium.url;
   });
-
 // Modal
 document.addEventListener("DOMContentLoaded", function () {
   var elem = document.querySelector("#modal1");
