@@ -15,7 +15,7 @@ Simply click the "Choose Your Wisdom" button and make a selection between a funn
 Anna Riley 
 https://github.com/mercurybased
 
-Ashliegh Chute
+Ashleigh Chute
 https://github.com/Ashlhc
 
 Veronica Griggs
