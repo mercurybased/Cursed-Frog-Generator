@@ -20,7 +20,7 @@ body {
 }
 
 header h1{
-    background:linear-gradient(#00853E,#50C878,#00853E) ;
+    background:linear-gradient(#00853E,#006400,#00853E) ;
     padding-left: 0px;
     padding-right: 40px;
     padding-top: 15px;
@@ -30,14 +30,14 @@ header h1{
     margin-bottom: 50px;
     height: 75px;
     width: 55%;
-    border-color: #FEBE10;
-    border-width: 10px;
+    border-color: #e4aacb;
+    border-width: 2px;
     border-radius: 25px;
     border-style: solid;
     font-family: 'Pompiere', cursive;
     font-size: 1.60em;
     text-align: center;
-    color: #FEBE10;
+    color: #ACE1AF;
 }
 
 main {
@@ -46,19 +46,20 @@ main {
 }
 
 .modal-trigger {
-    background-image:radial-gradient(#FEBE10,#e25822,#FEBE10);
+    background-color:#74C365;
     align-self: center;
     text-align: center;
     line-height: 100px;
-    height:120px;
-    width:400px;
-    border-width: 10px;
-    border-style: double;
+    /* height:120px; */
+    width:200px;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 25px;
-    border-color: #e25822;
-    font-size: large;
-    font-family: sans-serif;
-    color: #7c0a02;
+    border-color:#e4aacb;
+    font-size: xx-large;
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: #033503;
+    padding: 5px;
 }
 
 .modal {
@@ -88,11 +89,6 @@ main {
     background-image: linear-gradient(#FEBE10,#e25822,#FEBE10);
 }
 
-/* button {
-    background-position: bottom;
-    padding: 30px;
-} */
-
 #winston-gif {
     display:block;
     margin: 0;
@@ -105,9 +101,9 @@ main {
     font-family: 'Pompiere', cursive;
     text-align: center;
     background-color: #00A86B;
-    color: azure;
-    border: #FEBE10;
-    border-width: 5px;
+    color: #ACE1AF;
+    border: #e4aacb;
+    border-width: 2px;
     border-style: solid;
     border-radius: 25px;
 }
